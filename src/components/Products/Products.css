@@ -1,0 +1,15 @@
+.productsContainer {
+    display: flex;
+    margin: 10px;
+}
+
+.product {
+    margin-right: 10px;
+    height: 240px;
+    width: 250px;
+}
+
+.product img {
+    height: 200px;
+    width: 180px;
+}
