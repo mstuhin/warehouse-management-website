@@ -1,18 +1,18 @@
-.productsContainer {
+.productsContainerInv {
     /* display: flex; */
     margin-top: 10px;
 
 }
 
-.product {
+.productInv {
     /* margin-right: 10px; */
 
-    height: 380px;
+    height: 680px;
     width: 300px;
     border: 1px solid rgb(87, 2, 27)
 }
 
-.product img {
-    height: 250px;
-    width: 220px;
+.productInv img {
+    height: 420px;
+    width: 380px;
 }

@@ -1,16 +1,23 @@
-import './Products.css';
-import products1 from '../../images/Hero1.jpg';
+import React from 'react';
+import './Inventory.css';
+import products1 from '../../images/img1.jpg';
 import products2 from '../../images/hero2.jpg';
 
-const Products = () => {
+
+
+
+
+const Inventory = () => {
     return (
+        <div className='productsContainerInv  row gy-5'>
 
-
-        <div className='productsContainer  row gy-5'>
-
-            <div className='product col'>
+            <div className='productInv col'>
                 <img src={products1} alt="" />
-
+                <h1>Name: DriveSpark</h1>
+                <h4>quantity: 5</h4>
+                <h3>Price: 120$</h3>
+                <h2>Supplier: Jak cod</h2>
+                <button>Updated</button>
                 <h4>Dimensions and Capacity
                     Fuel Capacity
                     12.8 L
@@ -30,7 +37,7 @@ const Products = () => {
                     778 m</h4>
             </div>
 
-            <div className='product'>
+            <div className='productInv'>
                 <img src={products2} alt="" />
 
                 <h4>Dimensions and Capacity
@@ -52,7 +59,7 @@ const Products = () => {
                     778 m</h4>
             </div>
 
-            <div className='product'>
+            <div className='productInv'>
                 <img src={products1} alt="" />
 
                 <h4>Dimensions and Capacity
@@ -74,7 +81,7 @@ const Products = () => {
                     778 m</h4>
             </div>
 
-            <div className='product'>
+            <div className='productInv'>
                 <img src={products1} alt="" />
 
                 <h4>Dimensions and Capacity
@@ -96,7 +103,7 @@ const Products = () => {
                     778 m</h4>
             </div>
 
-            <div className='product'>
+            <div className='productInv'>
                 <img src={products1} alt="" />
 
                 <h4>Dimensions and Capacity
@@ -119,7 +126,7 @@ const Products = () => {
             </div>
 
 
-            <div className='product'>
+            <div className='productInv'>
                 <img src={products1} alt="" />
 
                 <h4>Dimensions and Capacity
@@ -143,7 +150,24 @@ const Products = () => {
         </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     );
 };
 
-export default Products;
+export default Inventory;
