@@ -1,18 +1,12 @@
-.productsContainerInv {
-    /* display: flex; */
-    margin-top: 10px;
-
+.inv-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-left: 35px;
+    margin-top: 45px;
 }
 
-.productInv {
-    /* margin-right: 10px; */
-
-    height: 680px;
-    width: 300px;
-    border: 1px solid rgb(87, 2, 27)
-}
-
-.productInv img {
-    height: 420px;
-    width: 380px;
+.env-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
 }

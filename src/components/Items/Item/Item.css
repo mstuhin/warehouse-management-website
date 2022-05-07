@@ -1,0 +1,15 @@
+.item img {
+    width: 286px;
+    height: 286px;
+}
+
+.update-bt {
+    width: 100%;
+    background: rgb(15, 104, 221);
+    border: none;
+    border-radius: 5px;
+}
+
+.update-bt:hover {
+    background-color: rgb(148, 20, 26);
+}

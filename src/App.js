@@ -2,13 +2,15 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
-
 import Home from './components/Home/Home';
 import Inventory from './components/Inventory/Inventory';
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar';
 import NotFound from './components/NotFound/NotFound';
 import Products from './components/Products/Products';
+import Register from './components/register/Register';
+
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="home" element={<Home></Home>}></Route>
         <Route path="products" element={<Products></Products>}></Route>
         <Route path="inventory" element={<Inventory></Inventory>}></Route>
+        <Route path="register" element={<Register></Register>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

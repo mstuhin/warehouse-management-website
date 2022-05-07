@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Boot Camp",
+        "price": "300",
+        "stock": 15,
+        "seller": "Albi",
+        "description": " Classes include: Random Basic Fitness Assessment to gauge “where you are at” with your fitness levels. Bleep tests to you come i wil my best. ",
+        "img": "https://i.ibb.co/GQrb04x/boot-camp.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Group Exercise",
+        "price": "100",
+        "stock": 15,
+        "seller": "jmi",
+        "description": " IGNITE S Group Exercise classes are a great way to add variety and fun to your workouts. Classes are guaranteed to get you stretching, lifting, toning, dancing,",
+        "img": "https://i.ibb.co/fNZY6qy/covar3.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Gym Management",
+        "price": "150",
+        "stock": 15,
+        "seller": "Abi",
+        "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
+        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Gym Management",
+        "price": "150",
+        "stock": 15,
+        "seller": "Albi",
+        "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
+        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Gym Management",
+        "price": "150",
+        "stock": 15,
+        "seller": "Arian",
+        "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
+        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Gym Management",
+        "price": "150",
+        "stock": 15,
+        "seller": "Bari",
+        "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
+        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+    }
+]

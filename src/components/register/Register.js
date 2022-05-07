@@ -1,25 +1,25 @@
+
 import React from 'react';
-import useHooks from '../../hooks/useHooks';
 
 
-const Login = () => {
-    const { singInWithGoogle } = useHooks();
+const Register = () => {
+
 
     return (
         <div>
-            <h3>Please login</h3>
+            <h3>Please Register now</h3>
             <form >
-
+                <input type="text" placeholder='Your name' />
+                <br />
                 <input type="email" placeholder='Your Email' />
                 <br />
                 <input type="password" name="" id="" placeholder='Your password' />
                 <br />
-                <input type="submit" value="LogIn" />
+                <input type="submit" value="Register" />
 
             </form>
-            <button onClick={singInWithGoogle}>Google Sign In</button>
         </div>
     );
 };
 
-export default Login;
+export default Register;
