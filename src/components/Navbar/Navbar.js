@@ -1,10 +1,13 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useHooks from '../../hooks/useHooks';
 import logo from '../../images/log.png';
 import './Navbar.css';
 
 
 const Navbar = () => {
+    const { user, hdSignOut } = useHooks();
     return (
 
         <nav className="navPic navbar navbar-expand-lg navbar-light bg-primary">
@@ -19,8 +22,16 @@ const Navbar = () => {
                         <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         <Link className="nav-link" to="/inventory">Inventory</Link>
                         <Link className="nav-link" to="#">Pricing</Link>
-                        <Link className="nav-link " to="/login" >Login</Link>
                         <Link className="nav-link " to="/register" >Register</Link>
+                        <span>{user?.displayName && user.displayName}</span>
+                        {
+                            user?.uid
+                                ?
+                                <button onClick={hdSignOut}>sign out</button>
+                                :
+                                <Link className="nav-link " to="/login" >Login</Link>
+                        }
+
                     </div>
                 </div>
             </div>

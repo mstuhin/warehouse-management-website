@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 
 import app from '../firebase.init';
 
@@ -22,8 +22,20 @@ const useHooks = () => {
                 console.log(user);
             })
     }
+
+    const hdSignOut = () => {
+        signOut(auth)
+            .then(() => { })
+    }
+
+    useEffect(() => {
+        onAuthStateChanged(auth, user => {
+            setUser(user);
+        })
+    }, [])
+
     // return [user, setUser];
-    return { user, singInWithGoogle };
+    return { user, hdSignOut, singInWithGoogle };
 }
 
 export default useHooks;
