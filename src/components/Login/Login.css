@@ -1,0 +1,50 @@
+.login-container {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid cadetblue;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-title {
+    font-size: 30px;
+    color: rgb(38, 47, 177);
+    margin-top: 8px;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.input-group label {
+    display: block;
+}
+
+.input-text {
+
+    margin-right: 15px;
+}
+
+
+
+.input-group input {
+    width: 340px;
+    height: 50px;
+    border: 1px solid cadetblue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.form-submit {
+    width: 340px;
+    height: 50px;
+    background-color: rgb(226, 177, 43);
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    margin-left: 20px;
+
+}

@@ -1,47 +1,58 @@
-import React from 'react';
-import Form from 'react-bootstrap/Form'
-import useHooks from '../../hooks/useHooks';
-import Button from 'react-bootstrap/Button';
-
-
+import React, { useState } from 'react';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
+import './Login.css';
 const Login = () => {
-    const { singInWithGoogle } = useHooks();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const navigate = useNavigate();
+
     const handleEmail = (e) => {
-        console.log(e.target.value);
+        setEmail(e.target.value);
     }
     const handlePassword = (e) => {
-        console.log(e.target.value);
+        setPassword(e.target.value);
+    }
+    if (user) {
+        navigate('/home');
     }
 
-    const handleSubmit = (e) => {
-        console.log('ok');
+    const handleLogin = (e) => {
         e.preventDefault();
+        signInWithEmailAndPassword(email, password);
     }
-    return (
-        <div>
-            <div className='w-50 mx-auto mt-3'>
-                <h3 className='mt-3'>Please login</h3>
-                <Form onSubmit={handleSubmit}>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
-                        </Form.Text>
-                    </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control onBlur={handlePassword} type="password" placeholder="Password" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Submit
-                    </Button>
-                </Form>
-                <button onClick={singInWithGoogle}>Google Sign In</button>
+    return (
+        <div className='login-container'>
+            <div>
+                <h2 className='login-title'>Login</h2>
+                <form onSubmit={handleLogin}>
+                    <div className='input-group'>
+                        <label className='input-text' htmlFor="email">Email</label>
+                        <input onBlur={handleEmail} type="email" name="email" id="" required />
+
+                    </div>
+
+                    <div className="input-group">
+                        <label className='input-text' htmlFor="password">Password</label>
+                        <input onBlur={handlePassword} type="password" name="password" id="" required />
+
+                    </div>
+                    <p>{error?.message}</p>
+                    <input className="form-submit" type="submit" value="Login" />
+                </form>
+                <p>
+                    <Link to="/register">Create a New Account </Link>
+                </p>
             </div>
         </div>
     );
