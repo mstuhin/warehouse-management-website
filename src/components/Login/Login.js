@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -15,6 +16,8 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
     const handleEmail = (e) => {
         setEmail(e.target.value);
@@ -23,7 +26,7 @@ const Login = () => {
         setPassword(e.target.value);
     }
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     const handleLogin = (e) => {
@@ -53,7 +56,9 @@ const Login = () => {
                 <p>
                     <Link to="/register">Create a New Account </Link>
                 </p>
+                <SocialLogin></SocialLogin>
             </div>
+
         </div>
     );
 };
