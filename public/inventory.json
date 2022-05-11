@@ -1,56 +1,56 @@
 [
     {
         "id": 1,
-        "name": "Boot Camp",
-        "price": "300",
+        "name": "Hero xr",
+        "price": "98000",
         "stock": 15,
         "seller": "Albi",
-        "description": " Classes include: Random Basic Fitness Assessment to gauge “where you are at” with your fitness levels. Bleep tests to you come i wil my best. ",
-        "img": "https://i.ibb.co/GQrb04x/boot-camp.jpg"
+        "description": " Thriller 160R bike uses Inverted LCD Console, which has modern features like Side Stand Engine Cut-Off.",
+        "img": "https://i.ibb.co/bvHCy6y/images-3.jpg"
     },
     {
         "id": 2,
-        "name": "Group Exercise",
-        "price": "100",
-        "stock": 15,
+        "name": "Hunk 150r",
+        "price": "12000",
+        "stock": 9,
         "seller": "jmi",
         "description": " IGNITE S Group Exercise classes are a great way to add variety and fun to your workouts. Classes are guaranteed to get you stretching, lifting, toning, dancing,",
-        "img": "https://i.ibb.co/fNZY6qy/covar3.jpg"
+        "img": "https://i.ibb.co/G7XZVpx/motor-5.jpg"
     },
     {
         "id": 3,
-        "name": "Gym Management",
-        "price": "150",
+        "name": "Hero Achiever",
+        "price": "124900",
         "stock": 15,
         "seller": "Abi",
         "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
-        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+        "img": "https://i.ibb.co/Vj8m1Pp/images.jpg"
     },
     {
         "id": 3,
-        "name": "Gym Management",
-        "price": "150",
-        "stock": 15,
+        "name": "Hero RR7 ",
+        "price": "123000",
+        "stock": 25,
         "seller": "Albi",
         "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
-        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+        "img": "https://i.ibb.co/6v27Sgc/images-1.jpg"
     },
     {
         "id": 3,
-        "name": "Gym Management",
-        "price": "150",
+        "name": "Er11",
+        "price": "156000",
         "stock": 15,
         "seller": "Arian",
         "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
-        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+        "img": "https://i.ibb.co/qyqmsvR/popular.jpg"
     },
     {
         "id": 3,
-        "name": "Gym Management",
-        "price": "150",
+        "name": "BR5",
+        "price": "185000",
         "stock": 15,
         "seller": "Bari",
         "description": "IGNITE supports landlords and owners associations by providing professional gym and facilities management solutions that enhance the residents experience ",
-        "img": "https://i.ibb.co/jhRf9dV/gym.jpg"
+        "img": "https://i.ibb.co/nQ9SpbK/images-2.jpg"
     }
 ]

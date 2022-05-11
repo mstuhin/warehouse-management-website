@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import './Home.css';
-import product from '../../images/heroH.jpg';
+import product from '../../images/bike-banner.jpg';
 import popular from '../../images/popular.jpg';
 import Upcoming from '../../images/upcoming.jpg';
 
@@ -31,14 +31,14 @@ const Home = () => {
             </div>
 
             <div className='row mt-5'>
-                <div className='col'>
+                <div className='item-1 col'>
                     <img src={popular} alt="" />
-                    <h1>Popular items</h1>
+                    <h1 className='item-title'>Popular items</h1>
                 </div>
 
-                <div className='col'>
+                <div className='item-2 col'>
                     <img src={Upcoming} alt="" />
-                    <h1>Upcoming items</h1>
+                    <h1 className='item-title'>Upcoming items</h1>
                 </div>
             </div>
         </div>

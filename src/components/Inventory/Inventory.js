@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Inventory.css';
-import products1 from '../../images/img1.jpg';
-import products2 from '../../images/hero2.jpg';
 import Item from '../Items/Item/Item';
 
 

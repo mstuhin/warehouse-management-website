@@ -28,7 +28,7 @@ const Navbar = () => {
                     <div className="navbar-nav">
                         <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
                         <Link className="nav-link" to="/inventory">Inventory</Link>
-                        <Link className="nav-link" to="#">Pricing</Link>
+                        <Link className="nav-link" to="#"></Link>
                         <Link className="nav-link " to="/register" >Register</Link>
                         {
                             user ?
