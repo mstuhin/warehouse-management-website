@@ -13,7 +13,7 @@ const Inventory = () => {
 
 
     useEffect(() => {
-        fetch('inventory.json')
+        fetch('http://localhost:5000/house')
             .then(res => res.json())
             .then(data => setInventory(data));
     }, []);
@@ -27,7 +27,7 @@ const Inventory = () => {
         <div className="inv-container">
             <div className="env-container">
                 {
-                    inventory.map(inventory => <Item key={inventory.id}
+                    inventory.map(inventory => <Item key={inventory._id}
                         inventory={inventory}
                         handleBt={handleBt}
                     ></Item>)
